@@ -2,9 +2,9 @@ name: cypress e2e test
 on:
   pull_request:
     types: [opened, reopened]
-defaults:
-  run:
-    working-directory: ./frontend
+# defaults:
+  # run:
+  #   working-directory: ./frontend
 jobs:
   cypress:
     runs-on: ubuntu-latest
