@@ -8,14 +8,15 @@ on:
 jobs:
   cypress:
     runs-on: ubuntu-latest
+    
     steps:  
       - name: Checkout repository
-      uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # Cypress가 지원하는 Node.js 버전을 사용합니다.
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Cypress가 지원하는 Node.js 버전을 사용합니다.
 
       - name: Install node modules
         run: npm install
