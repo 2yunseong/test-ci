@@ -2,7 +2,7 @@ import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
-    baseUrl: 'https://www.naver.com',
+    baseUrl: 'http://localhost:3001',
     setupNodeEvents(on, config) {},
   },
 });
